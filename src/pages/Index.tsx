@@ -247,7 +247,11 @@ const Index = () => {
               </a>
               <div className="flex items-center gap-4">
                 <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10"><Icon name="MapPin" size={18} /></span>
-                <span className="font-display text-lg">г. Новороссийск, ул. Советов</span>
+                <span className="font-display text-lg">г. Новороссийск, ул. Мира, 16</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10"><Icon name="Clock" size={18} /></span>
+                <span className="font-display text-lg">Ежедневно с 9:00 до 20:00</span>
               </div>
             </div>
           </div>
