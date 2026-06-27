@@ -274,6 +274,26 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Floating buttons */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a
+          href="https://t.me/+79887622784"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-accent text-accent-foreground px-4 py-3 rounded-full shadow-lg hover:brightness-110 transition-all hover:scale-105 font-medium text-sm"
+        >
+          <Icon name="Send" size={18} />
+          <span>Telegram</span>
+        </a>
+        <a
+          href="tel:+79887622784"
+          className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-3 rounded-full shadow-lg hover:brightness-110 transition-all hover:scale-105 font-medium text-sm"
+        >
+          <Icon name="Phone" size={18} />
+          <span>Позвонить</span>
+        </a>
+      </div>
+
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground/60 border-t border-white/10">
         <div className="container py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
