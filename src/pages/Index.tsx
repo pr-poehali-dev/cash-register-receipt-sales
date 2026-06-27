@@ -225,6 +225,19 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Map */}
+      <section className="border-t border-border">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=37.820099%2C44.723209&z=16&pt=37.820099%2C44.723209%2Cpm2rdm&text=%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%2C+%D1%83%D0%BB.+%D0%9C%D0%B8%D1%80%D0%B0%2C+16"
+          width="100%"
+          height="400"
+          frameBorder="0"
+          allowFullScreen
+          title="Мы на карте"
+          className="block"
+        />
+      </section>
+
       {/* Contacts */}
       <section id="contacts" className="py-24 bg-primary text-primary-foreground">
         <div className="container grid lg:grid-cols-2 gap-16">
