@@ -237,13 +237,13 @@ const Index = () => {
               Напишите или позвоните — ответим в рабочее время и подскажем по оформлению.
             </p>
             <div className="mt-10 space-y-5">
-              <a href="tel:+78617000000" className="flex items-center gap-4 group">
+              <a href="tel:+79887622784" className="flex items-center gap-4 group">
                 <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10 group-hover:bg-accent transition-colors"><Icon name="Phone" size={18} /></span>
-                <span className="font-display text-lg">+7 (8617) 00-00-00</span>
+                <span className="font-display text-lg">+7 (988) 762-27-84</span>
               </a>
-              <a href="mailto:info@chek-yug.ru" className="flex items-center gap-4 group">
-                <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10 group-hover:bg-accent transition-colors"><Icon name="Mail" size={18} /></span>
-                <span className="font-display text-lg">info@chek-yug.ru</span>
+              <a href="https://t.me/+79887622784" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10 group-hover:bg-accent transition-colors"><Icon name="Send" size={18} /></span>
+                <span className="font-display text-lg">Telegram</span>
               </a>
               <div className="flex items-center gap-4">
                 <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10"><Icon name="MapPin" size={18} /></span>
