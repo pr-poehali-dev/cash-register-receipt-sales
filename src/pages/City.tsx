@@ -66,8 +66,9 @@ const City = () => {
 
   useEffect(() => {
     const prevTitle = document.title;
-    const title = `Товарные и кассовые чеки в ${city.name} — Чек-Юг`;
-    const description = `Изготовление товарных, кассовых и гостиничных чеков в ${city.name}. Быстро, аккуратно, с доставкой по городу.`;
+    const title = `Чек-Юг — товарные и кассовые чеки в ${city.name}. Гостиничные чеки в ${city.name}. Чеки ${city.name}. QR код.`;
+    const description = `Купить, сделать товарные и кассовые чеки в ${city.name}. Быстро, аккуратно, с доставкой по городу.`;
+    const keywords = `Чеки ${city.name}, кассовые товарные чеки ${city.name}, гостиничные чеки ${city.name}, отчетные документы в ${city.name}`;
 
     document.title = title;
 
@@ -75,9 +76,14 @@ const City = () => {
     const prevDescription = descTag?.getAttribute('content') ?? '';
     descTag?.setAttribute('content', description);
 
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    const prevKeywords = keywordsTag?.getAttribute('content') ?? '';
+    keywordsTag?.setAttribute('content', keywords);
+
     return () => {
       document.title = prevTitle;
       descTag?.setAttribute('content', prevDescription);
+      keywordsTag?.setAttribute('content', prevKeywords);
     };
   }, [city.name]);
 
