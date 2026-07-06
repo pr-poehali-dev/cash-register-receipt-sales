@@ -104,7 +104,7 @@ const Index = () => {
             <p className="mt-8 max-w-md text-lg text-muted-foreground animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
               Аккуратное изготовление чеков и сопроводительных документов с доставкой по городу. Быстро и без лишних формальностей.
               <br />
-              Чеки гостиницы Новороссийске - QR код.
+              Чеки гостиницы в Новороссийске - QR код.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0 }}>
               <Button size="lg" onClick={() => scrollTo('catalog')} className="font-medium">
