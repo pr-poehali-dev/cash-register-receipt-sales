@@ -93,7 +93,7 @@ const City = () => {
         className="fixed inset-0 -z-20 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${city.bgImage})` }}
       />
-      <div className="fixed inset-0 -z-10 bg-background/85" />
+      <div className="fixed inset-0 -z-10 bg-background/65" />
 
       {/* Header */}
       <header className="fixed top-0 inset-x-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
