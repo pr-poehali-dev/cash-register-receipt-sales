@@ -1,11 +1,14 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
+import { CITIES } from '@/data/cities';
 
 const NAV = [
   { id: 'hero', label: 'Главная' },
   { id: 'about', label: 'О компании' },
   { id: 'catalog', label: 'Каталог' },
+  { id: 'cities', label: 'Города' },
   { id: 'delivery', label: 'Доставка' },
   { id: 'contacts', label: 'Контакты' },
 ];
@@ -205,6 +208,33 @@ const Index = () => {
                   </button>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cities */}
+      <section id="cities" className="py-24 border-t border-border">
+        <div className="container">
+          <div className="max-w-2xl mb-14">
+            <p className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-4">География</p>
+            <h2 className="font-display font-bold text-4xl sm:text-5xl leading-tight tracking-tight">
+              Отчётные документы в Краснодарском крае
+            </h2>
+            <p className="mt-6 text-muted-foreground text-lg">
+              Работаем с клиентами по всему краю — выберите свой город.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            {CITIES.map((c) => (
+              <Link
+                key={c.slug}
+                to={`/gorod/${c.slug}`}
+                className="flex items-center gap-2 px-4 py-3 rounded-sm border border-border bg-secondary/40 hover:bg-accent hover:text-accent-foreground transition-colors text-sm font-medium"
+              >
+                <Icon name="MapPin" size={14} />
+                {c.name}
+              </Link>
             ))}
           </div>
         </div>
