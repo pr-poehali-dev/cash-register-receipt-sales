@@ -40,10 +40,10 @@ const PRODUCTS = [
   },
 ];
 
-const stepsFor = (cityName: string) => [
+const stepsFor = (cityPrepositional: string) => [
   { n: '01', t: 'Заявка', d: 'Оставляете данные и перечень позиций.' },
   { n: '02', t: 'Оформление', d: 'Готовим бланки в течение дня.' },
-  { n: '03', t: 'Доставка', d: `Привозим по ${cityName} или отправляем.` },
+  { n: '03', t: 'Доставка', d: `Привозим по ${cityPrepositional} или отправляем.` },
 ];
 
 const City = () => {
@@ -55,7 +55,7 @@ const City = () => {
     return <Navigate to="/" replace />;
   }
 
-  const STEPS = stepsFor(city.name);
+  const STEPS = stepsFor(city.prepositional);
 
   const scrollTo = (id: string) => {
     setMenuOpen(false);
@@ -66,9 +66,9 @@ const City = () => {
 
   useEffect(() => {
     const prevTitle = document.title;
-    const title = `Чек-Юг — товарные и кассовые чеки в ${city.name}. Гостиничные чеки в ${city.name}. Чеки ${city.name}. QR код.`;
-    const description = `Купить, сделать товарные и кассовые чеки в ${city.name}. Быстро, аккуратно, с доставкой по городу.`;
-    const keywords = `Чеки ${city.name}, кассовые товарные чеки ${city.name}, гостиничные чеки ${city.name}, отчетные документы в ${city.name}`;
+    const title = `Чек-Юг — товарные и кассовые чеки в ${city.prepositional}. Гостиничные чеки в ${city.prepositional}. Чеки ${city.name}. QR код.`;
+    const description = `Купить, сделать товарные и кассовые чеки в ${city.prepositional}. Быстро, аккуратно, с доставкой по городу.`;
+    const keywords = `Чеки ${city.name}, кассовые товарные чеки ${city.name}, гостиничные чеки ${city.name}, отчетные документы в ${city.prepositional}`;
 
     document.title = title;
 
@@ -140,7 +140,7 @@ const City = () => {
             <p className="mt-8 max-w-md text-lg text-muted-foreground animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
               Аккуратное изготовление чеков и сопроводительных документов с доставкой по городу. Быстро и без лишних формальностей.
               <br />
-              Чеки гостиницы в {city.name} - QR код.
+              Чеки гостиницы в {city.prepositional} - QR код.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0 }}>
               <Button size="lg" onClick={() => scrollTo('catalog')} className="font-medium">
@@ -190,10 +190,10 @@ const City = () => {
           </div>
           <div className="space-y-6 text-muted-foreground text-lg">
             <p>
-              «Чек-Юг» — небольшая мастерская в {city.name}. Мы оформляем товарные и кассовые чеки, помогаем с сопроводительными документами для отчётности и закрытия сделок.
+              «Чек-Юг» — небольшая мастерская в {city.prepositional}. Мы оформляем товарные и кассовые чеки, помогаем с сопроводительными документами для отчётности и закрытия сделок.
             </p>
             <p>
-              Гостиничные чеки в {city.name}, отчётные документы за проживание через отель.
+              Гостиничные чеки в {city.prepositional}, отчётные документы за проживание через отель.
             </p>
             <p>
               Работаем аккуратно, ценим ваше время и внимательно относимся к деталям. За годы работы нам доверяют предприниматели и компании всего города.
@@ -296,7 +296,7 @@ const City = () => {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
-            <span className="flex items-center gap-2"><Icon name="Truck" size={18} className="text-accent" /> Курьер по {city.name}</span>
+            <span className="flex items-center gap-2"><Icon name="Truck" size={18} className="text-accent" /> Курьер по {city.prepositional}</span>
             <span className="flex items-center gap-2"><Icon name="Clock" size={18} className="text-accent" /> Срочные заказы за 2–3 часа</span>
             <span className="flex items-center gap-2"><Icon name="Package" size={18} className="text-accent" /> Отправка в другие города</span>
           </div>
