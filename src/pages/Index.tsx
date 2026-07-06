@@ -272,6 +272,10 @@ const Index = () => {
                 <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10 group-hover:bg-accent transition-colors"><Icon name="Send" size={18} /></span>
                 <span className="font-display text-lg">Telegram</span>
               </a>
+              <a href="https://max.ru/u/f9LHodD0cOKR-Q8BTfSOKFFnva1Qwl_xYasvJfTAdU32qbXXsDWu4nZ1OD0" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10 group-hover:bg-accent transition-colors"><Icon name="MessageCircle" size={18} /></span>
+                <span className="font-display text-lg">MAX</span>
+              </a>
               <div className="flex items-center gap-4">
                 <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10"><Icon name="MapPin" size={18} /></span>
                 <span className="font-display text-lg">г. Новороссийск, ул. Мира, 16</span>
@@ -311,6 +315,15 @@ const Index = () => {
         >
           <Icon name="Send" size={18} />
           <span>Telegram</span>
+        </a>
+        <a
+          href="https://max.ru/u/f9LHodD0cOKR-Q8BTfSOKFFnva1Qwl_xYasvJfTAdU32qbXXsDWu4nZ1OD0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-secondary text-foreground border border-border px-4 py-3 rounded-full shadow-lg hover:brightness-110 transition-all hover:scale-105 font-medium text-sm"
+        >
+          <Icon name="MessageCircle" size={18} />
+          <span>MAX</span>
         </a>
         <a
           href="tel:+79887622784"
