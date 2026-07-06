@@ -42,4 +42,11 @@ export const CITIES: CityInfo[] = [
   { slug: 'simferopol', name: 'Симферополь', address: 'ул. Пушкина, 15', prepositional: 'Симферополе', bgImage: `${CDN}/89305258-62ba-431f-aa9c-81b0347f4f97.jpg` },
   { slug: 'sevastopol', name: 'Севастополь', address: 'ул. Большая Морская, 10', prepositional: 'Севастополе', bgImage: `${CDN}/100e0188-eb3d-4e05-8e4b-64d867c0fd76.jpg` },
   { slug: 'yalta', name: 'Ялта', address: 'Набережная им. Ленина, 5', prepositional: 'Ялте', bgImage: `${CDN}/31f8e1e4-78af-48b6-a3e9-a87c187a20a0.jpg` },
+  { slug: 'maykop', name: 'Майкоп', address: 'ул. Краснооктябрьская, 15', prepositional: 'Майкопе', bgImage: `${CDN}/198d6a0d-aeac-437d-bb2d-96b8fa3384ad.jpg` },
+  { slug: 'naberezhnye-chelny', name: 'Набережные Челны', address: 'пр-т Мира, 20', prepositional: 'Набережных Челнах', bgImage: `${CDN}/25a52324-702d-4a72-bd7a-fa778bcdc98c.jpg` },
+  { slug: 'almetyevsk', name: 'Альметьевск', address: 'ул. Ленина, 10', prepositional: 'Альметьевске', bgImage: `${CDN}/a2dbd65f-af33-4146-96b4-26948de6b881.jpg` },
+  { slug: 'nizhnekamsk', name: 'Нижнекамск', address: 'пр-т Строителей, 5', prepositional: 'Нижнекамске', bgImage: `${CDN}/fb6b10ca-db0b-4b0d-9f67-83cc548683e7.jpg` },
+  { slug: 'petrozavodsk', name: 'Петрозаводск', address: 'пр-т Ленина, 25', prepositional: 'Петрозаводске', bgImage: `${CDN}/eddf47d8-b0b3-432f-bba6-1284246535b1.jpg` },
+  { slug: 'adler', name: 'Адлер', address: 'ул. Ленина, 234', prepositional: 'Адлере', bgImage: `${CDN}/939be7dd-cec2-4195-bb41-05434b5486ed.jpg` },
+  { slug: 'novoshahtinsk', name: 'Новошахтинск', address: 'ул. Харьковская, 60', prepositional: 'Новошахтинске', bgImage: `${CDN}/8cd0e402-a93d-4dd4-9bdc-5d578a217525.jpg` },
 ];
