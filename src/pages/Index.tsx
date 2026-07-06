@@ -257,10 +257,10 @@ const Index = () => {
           <div className="max-w-2xl mb-14">
             <p className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-4">География</p>
             <h2 className="font-display font-bold text-4xl sm:text-5xl leading-tight tracking-tight">
-              Отчётные документы в Краснодарском крае
+              Отчётные документы в вашем городе
             </h2>
             <p className="mt-6 text-muted-foreground text-lg">
-              Работаем с клиентами по всему краю — выберите свой город.
+              Работаем с клиентами по всей России — выберите свой город.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
