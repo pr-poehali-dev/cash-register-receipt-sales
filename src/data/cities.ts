@@ -36,4 +36,10 @@ export const CITIES: CityInfo[] = [
   { slug: 'tuapse', name: 'Туапсе', address: 'ул. Карла Маркса, 12', prepositional: 'Туапсе', bgImage: `${CDN}/8cc83541-4bd3-4083-b024-0e24f610b88f.jpg` },
   { slug: 'ust-labinsk', name: 'Усть-Лабинск', address: 'ул. Красная, 60', prepositional: 'Усть-Лабинске', bgImage: `${CDN}/34152035-f3af-4cda-b43a-ac4fbd348a0b.jpg` },
   { slug: 'hadyzhensk', name: 'Хадыженск', address: 'ул. Кирова, 7', prepositional: 'Хадыженске', bgImage: `${CDN}/b2ecdd94-848e-40e9-aef7-631abce67c60.jpg` },
+  { slug: 'rostov', name: 'Ростов-на-Дону', address: 'Большая Садовая ул., 50', prepositional: 'Ростове-на-Дону', bgImage: `${CDN}/68644367-f558-4198-b768-d2b0400e720b.jpg` },
+  { slug: 'stavropol', name: 'Ставрополь', address: 'пр-т Карла Маркса, 32', prepositional: 'Ставрополе', bgImage: `${CDN}/e6d43ad5-6928-468d-9852-59679672627d.jpg` },
+  { slug: 'kerch', name: 'Керчь', address: 'ул. Ленина, 18', prepositional: 'Керчи', bgImage: `${CDN}/f4b5b181-cace-4395-8cd8-f0ce95af0ef1.jpg` },
+  { slug: 'simferopol', name: 'Симферополь', address: 'ул. Пушкина, 15', prepositional: 'Симферополе', bgImage: `${CDN}/89305258-62ba-431f-aa9c-81b0347f4f97.jpg` },
+  { slug: 'sevastopol', name: 'Севастополь', address: 'ул. Большая Морская, 10', prepositional: 'Севастополе', bgImage: `${CDN}/100e0188-eb3d-4e05-8e4b-64d867c0fd76.jpg` },
+  { slug: 'yalta', name: 'Ялта', address: 'Набережная им. Ленина, 5', prepositional: 'Ялте', bgImage: `${CDN}/31f8e1e4-78af-48b6-a3e9-a87c187a20a0.jpg` },
 ];
