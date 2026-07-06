@@ -176,6 +176,8 @@ const City = () => {
               Аккуратное изготовление чеков и сопроводительных документов с доставкой по городу. Быстро и без лишних формальностей.
               <br />
               Чеки гостиницы в {city.prepositional} - QR код.
+              <br />
+              Гостиничные, кассовые и товарные чеки, чеки за проживание, ресторанные чеки, чеки АЗС, счёт-фактуры, товарные накладные Торг-12 и акты выполненных работ в {city.prepositional}.
             </p>
             <div className="mt-10 flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0 }}>
               <Button size="lg" onClick={() => scrollTo('catalog')} className="font-medium">
