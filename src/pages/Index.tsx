@@ -233,7 +233,7 @@ const Index = () => {
             <span className="flex items-center gap-2"><Icon name="Clock" size={18} className="text-accent" /> Срочные заказы за 2–3 часа</span>
             <span className="flex items-center gap-2"><Icon name="Package" size={18} className="text-accent" /> Отправка в другие города</span>
           </div>
-          <p className="mt-6 text-sm text-muted-foreground">
+          <p className="mt-6 text-base font-bold text-muted-foreground">
             Возможна доставка через СДЭК или Почтой России.
           </p>
         </div>
