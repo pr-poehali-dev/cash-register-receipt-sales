@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://kssovie-cheki-10.ru/sitemap.xml
