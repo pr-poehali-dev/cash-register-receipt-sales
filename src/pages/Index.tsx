@@ -242,7 +242,7 @@ const Index = () => {
       {/* Map */}
       <section className="border-t border-border">
         <iframe
-          src="https://yandex.ru/map-widget/v1/?ll=37.820099%2C44.723209&z=16&pt=37.820099%2C44.723209%2Cpm2rdm&text=%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%2C+%D1%83%D0%BB.+%D0%9C%D0%B8%D1%80%D0%B0%2C+16"
+          src="https://yandex.ru/map-widget/v1/?mode=search&text=%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%2C%20%D0%9C%D1%8B%D1%81%D1%85%D0%B0%D0%BA%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2059%D0%92&z=16"
           width="100%"
           height="400"
           frameBorder="0"
@@ -278,7 +278,7 @@ const Index = () => {
               </a>
               <div className="flex items-center gap-4">
                 <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10"><Icon name="MapPin" size={18} /></span>
-                <span className="font-display text-lg">г. Новороссийск, ул. Мира, 16</span>
+                <span className="font-display text-lg">г. Новороссийск, Мысхакское шоссе, 59В</span>
               </div>
               <div className="flex items-center gap-4">
                 <span className="w-11 h-11 grid place-items-center rounded-sm bg-white/10"><Icon name="Clock" size={18} /></span>
