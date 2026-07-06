@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
@@ -63,6 +63,23 @@ const City = () => {
   };
 
   const mapQuery = encodeURIComponent(`${city.name}, ${city.address}`);
+
+  useEffect(() => {
+    const prevTitle = document.title;
+    const title = `Товарные и кассовые чеки в ${city.name} — Чек-Юг`;
+    const description = `Изготовление товарных, кассовых и гостиничных чеков в ${city.name}. Быстро, аккуратно, с доставкой по городу.`;
+
+    document.title = title;
+
+    const descTag = document.querySelector('meta[name="description"]');
+    const prevDescription = descTag?.getAttribute('content') ?? '';
+    descTag?.setAttribute('content', description);
+
+    return () => {
+      document.title = prevTitle;
+      descTag?.setAttribute('content', prevDescription);
+    };
+  }, [city.name]);
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans antialiased selection:bg-accent selection:text-accent-foreground">
