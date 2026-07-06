@@ -51,7 +51,7 @@ const reviewsFor = (cityPrepositional: string) => [
   {
     name: 'Игорь Соколов',
     role: 'ИП, сфера услуг',
-    text: `Обратился в «Чек-Юг», когда срочно понадобились закрывающие документы после командировки в ${cityPrepositional}. Сделали всё за пару часов, оформление аккуратное, вопросов у бухгалтерии не возникло.`,
+    text: `Обратился в «ЧекДок», когда срочно понадобились закрывающие документы после командировки в ${cityPrepositional}. Сделали всё за пару часов, оформление аккуратное, вопросов у бухгалтерии не возникло.`,
     rating: 5,
   },
   {
@@ -95,7 +95,7 @@ const City = () => {
 
   useEffect(() => {
     const prevTitle = document.title;
-    const title = `Чек-Юг — товарные и кассовые чеки в ${city.prepositional}. Гостиничные чеки в ${city.prepositional}. Чеки ${city.name}. QR код.`;
+    const title = `ЧекДок — товарные и кассовые чеки в ${city.prepositional}. Гостиничные чеки в ${city.prepositional}. Чеки ${city.name}. QR код.`;
     const description = `Купить, сделать товарные и кассовые чеки в ${city.prepositional}. Быстро, аккуратно, с доставкой по городу.`;
     const keywords = `Чеки ${city.name}, кассовые товарные чеки ${city.name}, гостиничные чеки ${city.name}, отчетные документы в ${city.prepositional}`;
 
@@ -129,7 +129,7 @@ const City = () => {
         <div className="container flex items-center justify-between h-16">
           <button onClick={() => scrollTo('hero')} className="flex items-center gap-2 group">
             <span className="grid place-items-center w-8 h-8 rounded-sm bg-primary text-primary-foreground font-display font-bold text-sm">Ч</span>
-            <span className="font-display font-semibold tracking-wide text-lg">ЧЕК-ЮГ</span>
+            <span className="font-display font-semibold tracking-wide text-lg">ЧЕКДОК</span>
           </button>
           <nav className="hidden md:flex items-center gap-8">
             {NAV.map((n) => (
@@ -225,7 +225,7 @@ const City = () => {
           </div>
           <div className="space-y-6 text-muted-foreground text-lg">
             <p>
-              «Чек-Юг» — небольшая мастерская в {city.prepositional}. Мы оформляем товарные и кассовые чеки, помогаем с сопроводительными документами для отчётности и закрытия сделок.
+              «ЧекДок» — небольшая мастерская в {city.prepositional}. Мы оформляем товарные и кассовые чеки, помогаем с сопроводительными документами для отчётности и закрытия сделок.
             </p>
             <p>
               Гостиничные чеки в {city.prepositional}, отчётные документы за проживание через отель.
@@ -470,7 +470,7 @@ const City = () => {
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground/60 border-t border-white/10">
         <div className="container py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
-          <span className="font-display font-semibold tracking-wide text-primary-foreground">ЧЕК-ЮГ</span>
+          <span className="font-display font-semibold tracking-wide text-primary-foreground">ЧЕКДОК</span>
           <span>© 2026 · {city.name}</span>
         </div>
       </footer>
