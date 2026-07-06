@@ -12,6 +12,7 @@ const NAV = [
   { id: 'catalog', label: 'Каталог' },
   { id: 'cities', label: 'Города' },
   { id: 'delivery', label: 'Доставка' },
+  { id: 'reviews', label: 'Отзывы' },
   { id: 'contacts', label: 'Контакты' },
 ];
 
@@ -46,6 +47,33 @@ const STEPS = [
   { n: '01', t: 'Заявка', d: 'Оставляете данные и перечень позиций.' },
   { n: '02', t: 'Оформление', d: 'Готовим бланки в течение дня.' },
   { n: '03', t: 'Доставка', d: 'Привозим по Новороссийску или отправляем.' },
+];
+
+const REVIEWS = [
+  {
+    name: 'Игорь Соколов',
+    role: 'ИП, сфера услуг',
+    text: 'Обратился в «Чек-Юг», когда срочно понадобились закрывающие документы после командировки. Сделали всё за пару часов, оформление аккуратное, вопросов у бухгалтерии не возникло.',
+    rating: 5,
+  },
+  {
+    name: 'Марина Дорохова',
+    role: 'Частный предприниматель',
+    text: 'Заказывала гостиничные чеки для отчёта — всё оказалось быстро и без лишних вопросов. Приятно, что можно было согласовать детали в Telegram, не отрываясь от дел.',
+    rating: 5,
+  },
+  {
+    name: 'Дмитрий Волков',
+    role: 'Менеджер по снабжению',
+    text: 'Пользуемся услугами компании уже больше года для оформления товарных чеков. Стабильно хорошее качество бланков, доставка точно в срок по всему городу.',
+    rating: 5,
+  },
+  {
+    name: 'Елена Прохорова',
+    role: 'Бухгалтер',
+    text: 'Очень внимательное отношение к деталям — все реквизиты и суммы сходятся с первого раза. Рекомендую коллегам, кто ищет надёжного исполнителя по отчётным документам.',
+    rating: 5,
+  },
 ];
 
 const Index = () => {
@@ -274,6 +302,37 @@ const Index = () => {
           <p className="mt-6 text-base font-bold text-black">
             Возможна доставка через СДЭК или Почтой России.
           </p>
+        </div>
+      </section>
+
+      {/* Reviews */}
+      <section id="reviews" className="py-24 bg-secondary/40 border-t border-border">
+        <div className="container">
+          <div className="max-w-2xl mb-14">
+            <p className="font-mono text-xs tracking-[0.3em] uppercase text-accent mb-4">Отзывы</p>
+            <h2 className="font-display font-bold text-4xl sm:text-5xl leading-tight tracking-tight">
+              Что говорят клиенты
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {REVIEWS.map((r) => (
+              <div
+                key={r.name}
+                className="bg-card border border-border rounded-sm p-8 flex flex-col"
+              >
+                <div className="flex gap-1 mb-4">
+                  {Array.from({ length: r.rating }).map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="fill-accent text-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground text-base flex-1">«{r.text}»</p>
+                <div className="mt-6 pt-6 border-t border-border">
+                  <p className="font-display font-semibold">{r.name}</p>
+                  <p className="text-sm text-muted-foreground">{r.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
