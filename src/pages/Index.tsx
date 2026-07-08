@@ -421,7 +421,7 @@ const Index = () => {
           href="https://max.ru/u/f9LHodD0cOKR-Q8BTfSOKFFnva1Qwl_xYasvJfTAdU32qbXXsDWu4nZ1OD0"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 bg-secondary text-foreground border border-border px-4 py-3 rounded-full shadow-lg hover:brightness-110 transition-all hover:scale-105 font-medium text-sm"
+          className="flex items-center gap-2 bg-sky-400 text-white px-4 py-3 rounded-full shadow-lg hover:brightness-110 transition-all hover:scale-105 font-medium text-sm"
         >
           <Icon name="MessageCircle" size={18} />
           <span>MAX</span>
