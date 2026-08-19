@@ -137,8 +137,8 @@ const Index = () => {
               Новороссийск · с 2014 года
             </p>
             <h1 className="font-display font-bold leading-[0.95] tracking-tight text-5xl sm:text-6xl lg:text-7xl animate-fade-up">
-              Товарные и кассовые
-              <span className="block text-accent">чеки на заказ</span>
+              Чеки за проживание,
+              <span className="block text-accent">товарные и кассовые чеки на заказ</span>
             </h1>
             <p className="mt-8 max-w-md text-lg text-muted-foreground animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
               Аккуратное изготовление чеков и сопроводительных документов с доставкой по городу. Быстро и без лишних формальностей.
